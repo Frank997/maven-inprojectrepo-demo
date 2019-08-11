@@ -1,0 +1,1 @@
+# maven inproject repository demo
