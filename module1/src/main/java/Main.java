@@ -8,5 +8,6 @@ public class Main {
         XMLWriter xmlWriter = new XMLWriter();
         System.out.println("StringUtils.isBlank(\"abc\"):"+StringUtils.isBlank("abc"));
         System.out.println("DONE!");
+        System.out.println("worked");
     }
 }
