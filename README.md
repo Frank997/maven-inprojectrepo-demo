@@ -13,14 +13,14 @@ mvn deploy:deploy-file -DgroupId=[GROUP] -DartifactId=[ARTIFACT] -Dversion=[VERS
 
 maven 配置文件中如果配置了 mirror 并且将 mirrorOf标签的值设为 "*" ，需要将 mirrorOf的值改为非*的值，比如 external:*，否则即使在pom中设置了本地仓库也不会生效。
 示例：
-	<mirror>
+    <mirror>
       <id>nexus</id>
       <mirrorOf>*</mirrorOf>
       <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
     </mirror>
 
 将其中的 <mirrorOf>*</mirrorOf> 改为 <mirrorOf>external:*</mirrorOf>，即：
-	<mirror>
+    <mirror>
       <id>nexus</id>
       <mirrorOf>external:*</mirrorOf>
       <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
